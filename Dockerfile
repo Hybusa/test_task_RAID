@@ -3,7 +3,7 @@ FROM adoptopenjdk/openjdk11:alpine-jre
 ARG JAR_FILE=/target/*.jar
 
 # Set the working directory inside the container
-WORKDIR /app
+WORKDIR /src
 
 # Copy the JAR file and other necessary files to the working directory
 COPY ${JAR_FILE} application.jar
