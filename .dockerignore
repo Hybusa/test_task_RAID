@@ -19,6 +19,8 @@
 /.pg_data
 /.redis_data
 
+/home/user/.local/tmp/
+
 yarn-error.log
 Dockerfile
 docker-compose.pwd.yml
