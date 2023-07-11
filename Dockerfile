@@ -1,11 +1,12 @@
 # Use the official OpenJDK base image
 FROM adoptopenjdk/openjdk11:alpine-jre
+ARG JAR_FILE=/target/*.jar
 
 # Set the working directory inside the container
 WORKDIR /app
 
 # Copy the JAR file and other necessary files to the working directory
-COPY target/test_task.jar ./app.jar
+COPY ${JAR_FILE} application.jar
 
 # Expose the port on which the Spring application will run
 EXPOSE 8080
